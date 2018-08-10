@@ -1,0 +1,30 @@
+.button {
+  height: 40px;
+  width: 40px;
+  font-size: 24px;
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.svg {
+  fill: #fff;
+  transition: fill 200ms, stroke 200ms;
+}
+
+.svg:hover {
+  fill: #000 !important;
+  transition: fill 200ms, stroke 200ms;
+}
+
+.svg:hover .no {
+  stroke: #fff;
+  transition: stroke 200ms;
+}

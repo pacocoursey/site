@@ -11,15 +11,20 @@
     <!-- TODO -->
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="./style.css">
+    <!-- TODO: prefix -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/blog.css">
+    <link rel="stylesheet" href="./css/icon.css">
+    <link rel="stylesheet" href="./css/navi.css">
+
   </head>
   <body>
-    <div class="wrapper">
-      <nav class="show">
+    <div class="wrapper dark">
+      <nav class="dot">
         <ol class="navigation">
-          <li><a href="#">Music</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="split.html">Thoughts</a></li>
+          <li class="link"><a href="#">Music</a></li>
+          <li class="link"><a href="#">Projects</a></li>
+          <li class="link"><a href="#">Thoughts</a></li>
         </ol>
       </nav>
 
@@ -47,7 +52,7 @@
       <main>
         <section class="center dot">
           <div>
-            <img src="./gray.jpg" alt="me" class="me no-invert">
+            <img src="./gray.jpg" alt="me" class="me">
             <h1>Hello, I'm Paco.</h1>
             <div class="links">
               <div>
@@ -69,7 +74,11 @@
                     <polyline class="no" points="22,6 12,13 2,6"></polyline></svg>
                 </a>
               </div>
+
             </div>
+          </div>
+          <div class="sticky">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
           </div>
         </section>
       </main>
