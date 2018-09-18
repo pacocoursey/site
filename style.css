@@ -2,6 +2,15 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
+::selection {
+  background-color: #fff;
+  color: #1e1e1e;
+}
+
 html,
 body {
   padding: 0;
@@ -14,17 +23,29 @@ body {
   width: 100vw;
   min-height: 100vh;
   min-width: 100vw;
-  background-color: #fff;
-  color: #000;
+  background-color: #1e1e1e;
+  color: #fff;
 }
 
 section {
-  height: 100vh;
-  width: 100vw;
+  background-attachment: fixed;
+  background-color: #1e1e1e;
+}
+
+section.third {
+  height: 30vh;
 }
 
 section.half {
   height: 50vh;
+}
+
+section.rest {
+  height: 67vh;
+}
+
+section.full {
+  height: 100vh;
 }
 
 section.indent {
@@ -32,13 +53,46 @@ section.indent {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 0 10%;
+  padding: 100px calc(10% + 20px);
 }
 
-section..dot {
+section.dot {
   background-size: 50px 50px;
-  background-image: radial-gradient(#000 1px, #fff 1px);
+  background-image: radial-gradient(#fff 1px, #1e1e1e 1px);
   background-position: center;
+  position: relative;
+}
+
+section.dot::before {
+  content: '';
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(30, 30, 30, 1) 0%,
+      rgba(30, 30, 30, 0.5) 100%
+    );
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 25%;
+}
+
+section.dot::after {
+  content: '';
+  background-image:
+    linear-gradient(
+      to top,
+      rgba(30, 30, 30, 1) 0%,
+      rgba(30, 30, 30, 0.5) 100%
+    );
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 25%;
 }
 
 section.center {
@@ -49,8 +103,23 @@ section.center {
 }
 
 .introduction {
-  font-family: "Gilroy";
+  width: 100%;
+  font-family: "Gilroy", sans-serif;
   font-size: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 150px;
+  width: auto;
+}
+
+.intro-name {
+  margin: 0;
+  margin-left: 10%;
 }
 
 .projects {
@@ -60,15 +129,20 @@ section.center {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: stretch;
+  align-items: center;
   flex-wrap: wrap;
 }
 
 .project {
-  min-height: 250px;
+  filter: grayscale(1) blur(2px);
+  -webkit-filter: grayscale(1) blur(2px);
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform: translateZ(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  height: 250px;
   cursor: pointer;
   color: #fff;
-  filter: blur(10px);
   border-radius: 10px;
   padding: 40px;
   margin: 20px;
@@ -79,15 +153,17 @@ section.center {
   justify-content: space-between;
   align-items: stretch;
   box-shadow: none;
-  transition: filter 200ms, box-shadow 200ms;
+  transform: scale(1);
+  transition: filter 200ms, box-shadow 200ms, transform 200ms;
 }
 
 .project:hover {
-  filter: none;
+  filter: grayscale(0) blur(0);
   box-shadow:
     0 0 110px 0 rgba(0, 0, 0, 0.08),
     0 10px 25px 0 rgba(0, 0, 0, 0.05);
-  transition: filter 200ms, box-shadow 200ms;
+  transform: scale(1.05) rotate(0.01deg);
+  transition: filter 200ms, box-shadow 200ms, transform 200ms;
 }
 
 .title {
@@ -173,13 +249,13 @@ section.center {
 }
 
 .viv {
-  background-image: linear-gradient(to bottom right, #D4145A, #FBB03B);
+  background-image: linear-gradient(to bottom right, #d4145a, #fbb03b);
 }
 
 .moon {
-  background-image: linear-gradient(to bottom right, #B066FE, #63E2FF);
+  background-image: linear-gradient(to bottom right, #b066fe, #63e2ff);
 }
 
 .flow {
-  background-image: linear-gradient(to bottom right, #45145A, #FF5300);
+  background-image: linear-gradient(to bottom right, #45145a, #ff5300);
 }

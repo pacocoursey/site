@@ -1,0 +1,16 @@
+<svg version="1.1" stroke-linejoin="round" stroke-linecap="round" viewBox="0 0 370 440" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"  fill="url(#gradient-2)">
+	<defs>
+		<linearGradient id="gradient-1" gradientTransform="rotate(45)">
+			<stop offset="0%" stop-color="#f37f7c" />
+			<stop offset="50%" stop-color="#ee3d57" />
+			<stop offset="100%" stop-color="#dd1e47" />
+		</linearGradient>
+		<linearGradient id="gradient-2" gradientTransform="rotate(45)">
+			<stop offset="0%" stop-color="#adb5bd" />
+			<stop offset="50%" stop-color="#dee2e6" />
+			<stop offset="100%" stop-color="#f8f9fa" />
+		</linearGradient>
+	</defs>
+	<path d="M149,286c0,0-144,6-144,78c0,0,0,72,72,72s72-72,72-72V286z"/>
+	<path d="M5,76C5,76,5,4,77,4s144,0,144,0s144,0,144,144S221,292,221,292h-72c0,0-144,0-144,72V76z"/>
+</svg>
