@@ -39,6 +39,9 @@ const reset = (str) => {
   githubFlag = false;
   twitterFlag = false;
   emailFlag = false;
+  github.classList.remove('active');
+  twitter.classList.remove('active');
+  email.classList.remove('active');
   clearTimeout(timeout);
   text.innerHTML = str;
   text.classList.remove('link');
@@ -59,6 +62,7 @@ github.addEventListener('mouseenter', () => {
   // Animate the type
   type(l, githubString);
 
+  github.classList.add('active');
   githubFlag = true;
 });
 
@@ -77,6 +81,7 @@ twitter.addEventListener('mouseenter', () => {
   // Animate the type
   type(l, twitterString);
 
+  twitter.classList.add('active');
   twitterFlag = true;
 });
 
@@ -94,9 +99,10 @@ email.addEventListener('mouseenter', () => {
   // Animate the type
   type(l, emailString);
 
+  email.classList.add('active');
   emailFlag = true;
 });
 
-document.querySelector('.right').addEventListener('mouseleave', () => {
+document.querySelector('.title').addEventListener('mouseleave', () => {
   reset('Paco Coursey');
 });
