@@ -136,7 +136,8 @@ section.center {
   text-align: right;
 }
 
-.intro-name a:hover {
+.intro-name a:hover,
+.intro-name a:active {
   text-decoration: underline;
 }
 
@@ -186,7 +187,8 @@ section.center {
   transition: filter 200ms, box-shadow 200ms, transform 500ms !important;
 }
 
-.project:hover {
+.project:hover,
+.project:active {
   filter: grayscale(0) blur(0);
   box-shadow:
     0 0 110px 0 rgba(0, 0, 0, 0.08),
@@ -255,21 +257,25 @@ section.center {
   transition: opacity 200ms, transform 200ms;
 }
 
-.project:hover .tag {
+.project:hover .tag,
+.project:active .tag {
   opacity: 1;
   transform: translateY(0);
   transition: opacity 200ms, transform 200ms;
 }
 
-.project:hover .tag:first-child {
+.project:hover .tag:first-child,
+.project:active .tag:first-child {
   transition-delay: 100ms;
 }
 
-.project:hover .tag:nth-child(2) {
+.project:hover .tag:nth-child(2),
+.project:active .tag:nth-child(2) {
   transition-delay: 200ms;
 }
 
-.project:hover .tag:nth-child(3) {
+.project:hover .tag:nth-child(3),
+.project:active .tag:nth-child(2) {
   transition-delay: 300ms;
 }
 
@@ -289,7 +295,8 @@ section.center {
   background-image: linear-gradient(to bottom right, #d4145a, #fbb03b);
 }
 
-.flow:hover {
+.flow:hover,
+.flow:active {
   cursor: not-allowed;
 }
 
