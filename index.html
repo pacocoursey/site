@@ -5,91 +5,157 @@
     <title></title>
 
     <!-- Stylesheets -->
+    <link rel="stylesheet" href="./aos/aos.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./dots.css">
   </head>
   <body>
-    <section class="half indent">
+    <section class="half inset">
       <div class="introduction">
-        <img src="./logo.svg" alt="Paco Coursey Logo" class="logo">
-        <h1 class="intro-name">Paco Coursey</h1>
+        <div class="left">
+          <img src="./logo.svg" alt="Paco Coursey Logo" class="logo">
+        </div>
+
+        <div class="right">
+          <div class="intro-name" id="text">Paco Coursey</div>
+          <div class="links">
+
+            <a href="https://github.com/pacocoursey" target="_blank">
+              <div class="link" id="github">
+                <img src="./icons/github.svg" alt="GitHub icon">
+              </div>
+            </a>
+
+            <a href="https://twitter.com/pacocouursey" target="_blank">
+              <div class="link" id="twitter">
+                <img src="./icons/twitter.svg" alt="Twitter icon">
+              </div>
+            </a>
+
+            <a href="mailto:paco@paco.im">
+              <div class="link" id="email">
+                <img src="./icons/mail.svg" alt="Mail icon">
+              </div>
+            </a>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <section class="full dot"></section>
+    <section class="half dot"></section>
 
-    <section class="half">
+    <section class="half inset">
       <div class="projects">
-        <div class="project opus">
-          <div class="title">
-            <div class="name">Opus</div>
-            <div class="status stable">stable</div>
-          </div>
+        <div class="project-wrapper" data-aos="fade-up-right" data-aos-anchor-placement="top-center">
+          <div class="project opus">
+            <div class="title">
+              <div class="name">Opus</div>
+              <div class="status stable">stable</div>
+            </div>
 
-          <div class="description">
-            Opus is a minimal note-taking app.
-          </div>
+            <div class="description">
+              Opus is a minimalistic note-taking app.
+            </div>
 
-          <div class="tags">
-            <div class="tag">javascript</div>
-            <div class="tag">electron</div>
-            <div class="tag">app</div>
+            <div class="tags">
+              <div class="tag">javascript</div>
+              <div class="tag">electron</div>
+              <div class="tag">app</div>
+            </div>
           </div>
         </div>
 
-        <div class="project viv">
-          <div class="title">
-            <div class="name">Viv</div>
-            <div class="status stable">stable</div>
-          </div>
+        <div class="project-wrapper" data-aos="fade-up-left" data-aos-anchor-placement="top-center">
+          <div class="project viv">
+            <div class="title">
+              <div class="name">Viv</div>
+              <div class="status stable">stable</div>
+            </div>
 
-          <div class="description">
-            Viv is a cross-platform keyboard mapper.
-          </div>
+            <div class="description">
+              Viv is a cross-platform keyboard mapper.
+            </div>
 
-          <div class="tags">
-            <div class="tag">javascript</div>
-            <div class="tag">electron</div>
-            <div class="tag">app</div>
+            <div class="tags">
+              <div class="tag">javascript</div>
+              <div class="tag">electron</div>
+              <div class="tag">app</div>
+            </div>
           </div>
         </div>
 
-        <div class="project flow">
-          <div class="title">
-            <div class="name">Flow</div>
-            <div class="status progress">in progress</div>
-          </div>
+        <div class="project-wrapper" data-aos="fade-up-right" data-aos-anchor-placement="top-center">
+          <div class="project flow">
+            <div class="title">
+              <div class="name">Flow</div>
+              <div class="status progress">in progress</div>
+            </div>
 
-          <div class="description">
-            Flow is a focused music sharing platform.
-          </div>
+            <div class="description">
+              Flow is a focused music sharing platform.
+            </div>
 
-          <div class="tags">
-            <div class="tag">javascript</div>
-            <div class="tag">electron</div>
-            <div class="tag">app</div>
+            <div class="tags">
+              <div class="tag">next.js</div>
+              <div class="tag">react</div>
+              <div class="tag">platform</div>
+            </div>
           </div>
         </div>
 
-        <div class="project moon">
-          <div class="title">
-            <div class="name">Moon</div>
-            <div class="status progress">in progress</div>
-          </div>
+        <div class="project-wrapper" data-aos="fade-up-left" data-aos-anchor-placement="top-center">
+          <div class="project moon">
+            <div class="title">
+              <div class="name">Moon</div>
+              <div class="status progress">in progress</div>
+            </div>
 
-          <div class="description">
-            Moon generates beautiful menu bars for macOS.
-          </div>
+            <div class="description">
+              Moon generates beautiful menu bars for macOS.
+            </div>
 
-          <div class="tags">
-            <div class="tag">javascript</div>
-            <div class="tag">electron</div>
-            <div class="tag">app</div>
+            <div class="tags">
+              <div class="tag">javascript</div>
+              <div class="tag">electron</div>
+              <div class="tag">app</div>
+            </div>
           </div>
         </div>
+
+        <div class="project-wrapper" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-offset="200">
+          <div class="project f2prs">
+            <div class="title">
+              <div class="name">F2PRS</div>
+              <div class="status stable">live</div>
+            </div>
+
+            <div class="description">
+              The only accurate F2P RuneScape hiscores.
+            </div>
+
+            <div class="tags">
+              <div class="tag">php</div>
+              <div class="tag">SQL</div>
+              <div class="tag">website</div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <section class="full dot"></section>
+    <section class="half dot"></section>
 
+    <section class="full">
+
+    </section>
+
+    <!-- Scripts -->
+    <script src="./aos/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>

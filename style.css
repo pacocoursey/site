@@ -1,3 +1,7 @@
+:root {
+  --dot-size: 40px 40px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -27,72 +31,37 @@ body {
   color: #fff;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 section {
-  background-attachment: fixed;
   background-color: #1e1e1e;
 }
 
 section.third {
-  height: 30vh;
+  min-height: 30vh;
 }
 
 section.half {
-  height: 50vh;
+  min-height: 50vh;
 }
 
 section.rest {
-  height: 67vh;
+  min-height: 67vh;
 }
 
 section.full {
-  height: 100vh;
+  min-height: 100vh;
 }
 
-section.indent {
+section.inset {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 100px calc(10% + 20px);
-}
-
-section.dot {
-  background-size: 50px 50px;
-  background-image: radial-gradient(#fff 1px, #1e1e1e 1px);
-  background-position: center;
-  position: relative;
-}
-
-section.dot::before {
-  content: '';
-  background-image:
-    linear-gradient(
-      to bottom,
-      rgba(30, 30, 30, 1) 0%,
-      rgba(30, 30, 30, 0.5) 100%
-    );
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 25%;
-}
-
-section.dot::after {
-  content: '';
-  background-image:
-    linear-gradient(
-      to top,
-      rgba(30, 30, 30, 1) 0%,
-      rgba(30, 30, 30, 0.5) 100%
-    );
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 25%;
+  padding: 0 calc(10% + 20px);
 }
 
 section.center {
@@ -105,11 +74,58 @@ section.center {
 .introduction {
   width: 100%;
   font-family: "Gilroy", sans-serif;
-  font-size: 48px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.introduction > .right {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.introduction > .right > div {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
   align-items: center;
+}
+
+.links {
+  max-height: 50px;
+  min-height: 50px;
+  height: 50px;
+}
+
+.links .link {
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 5px;
+  height: 40px;
+  width: 40px;
+  background: #fff;
+  color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1);
+  transition: transform 200ms;
+}
+
+.links .link > img {
+  height: 20px;
+}
+
+.links .link:hover {
+  transform: scale(1.1);
+  transition: transform 200ms;
 }
 
 .logo {
@@ -118,14 +134,18 @@ section.center {
 }
 
 .intro-name {
-  margin: 0;
-  margin-left: 10%;
+  font-weight: bold;
+  font-size: 72px;
+  text-align: right;
+}
+
+.intro-name a:hover {
+  text-decoration: underline;
 }
 
 .projects {
   width: 100%;
   height: 100%;
-  padding: 50px 10%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -133,28 +153,32 @@ section.center {
   flex-wrap: wrap;
 }
 
+.project-wrapper {
+  height: 250px;
+  cursor: pointer;
+  flex: 1 0 45%;
+  margin: 20px;
+}
+
 .project {
+  height: 100%;
+  width: 100%;
   filter: grayscale(1) blur(2px);
   -webkit-filter: grayscale(1) blur(2px);
   -webkit-transform-style: preserve-3d;
   -webkit-transform: translateZ(0, 0, 0);
-  -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
-  height: 250px;
-  cursor: pointer;
+  -webkit-backface-visibility: hidden;
   color: #fff;
   border-radius: 10px;
   padding: 40px;
-  margin: 20px;
-  flex: 1 0 45%;
   background: #f1f3f5;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
   box-shadow: none;
-  transform: scale(1);
-  transition: filter 200ms, box-shadow 200ms, transform 200ms;
+  transition: filter 200ms, box-shadow 200ms, transform 500ms !important;
 }
 
 .project:hover {
@@ -162,8 +186,8 @@ section.center {
   box-shadow:
     0 0 110px 0 rgba(0, 0, 0, 0.08),
     0 10px 25px 0 rgba(0, 0, 0, 0.05);
-  transform: scale(1.05) rotate(0.01deg);
-  transition: filter 200ms, box-shadow 200ms, transform 200ms;
+  transform: scale(1.05) !important;
+  transition: filter 200ms, box-shadow 200ms, transform 500ms !important;
 }
 
 .title {
@@ -192,7 +216,7 @@ section.center {
 }
 
 .status.stable {
-  background-color: #8ce99a;
+  background-color: #51cf66;
 }
 
 .status.progress {
@@ -245,7 +269,7 @@ section.center {
 }
 
 .opus {
-  background-image: linear-gradient(to bottom right, #00b0ff, #90caf9);
+  background-image: linear-gradient(to bottom right, #00b0ff, #3b5bdb);
 }
 
 .viv {
@@ -258,4 +282,12 @@ section.center {
 
 .flow {
   background-image: linear-gradient(to bottom right, #45145a, #ff5300);
+}
+
+.flow:hover {
+  cursor: not-allowed;
+}
+
+.f2prs {
+  background-image: linear-gradient(to bottom right, #868e96, #212529);
 }
