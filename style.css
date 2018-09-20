@@ -15,6 +15,10 @@
   display: none;
 }
 
+::-moz-scrollbars {
+  display: none;
+}
+
 ::selection {
   background-color: #fff;
   color: #1e1e1e;
@@ -34,6 +38,19 @@ body {
   min-width: 100vw;
   background-color: #1e1e1e;
   color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Gilroy", var(--font-stack), sans-serif;
+}
+
+.large-text {
+  font-size: 72px;
 }
 
 a {
@@ -63,6 +80,46 @@ section.full {
 
 section.inset {
   padding: 0 15%;
+}
+
+section > div {
+  z-index: 2;
+}
+
+section .float {
+  position: absolute;
+  font-family: "Gilroy", var(--font-stack), sans-serif;
+  font-size: 14px;
+  bottom: 4rem;
+  animation: float 5s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+}
+
+@keyframes a {
+  0% {
+    opacity: 0;
+    transform: translateY(-150px);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(-10px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
 }
 
 .center {
@@ -177,6 +234,7 @@ section.inset {
 }
 
 .mobile-links {
+  z-index: 2;
   position: absolute;
   top: 40px;
   right: 15%;
@@ -187,9 +245,31 @@ section.inset {
   visibility: hidden;
 }
 
+/* bio */
+
+.bio {
+  max-width: 500px;
+  margin: 50px 0;
+}
+
+.bio > h1 {
+  margin: 0;
+}
+
+u {
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 4px solid #fff;
+}
+
+u:hover {
+  border-bottom-color: #a4a4a4;
+}
+
 /* project */
 
 .projects {
+  z-index: 2;
   width: 100%;
   height: 100%;
   display: flex;
@@ -367,6 +447,10 @@ section.inset {
 
   .mobile-links {
     visibility: visible;
+  }
+
+  .large-text {
+    font-size: 8vw;
   }
 
   .project {
