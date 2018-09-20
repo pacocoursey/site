@@ -94,34 +94,6 @@ section .float {
   animation: float 5s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
 }
 
-@keyframes a {
-  0% {
-    opacity: 0;
-    transform: translateY(-150px);
-  }
-
-  50% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(-10px);
-  }
-
-  50% {
-    transform: translateY(10px);
-  }
-}
-
 .center {
   display: flex;
   flex-direction: column;
@@ -474,5 +446,16 @@ u:hover {
     transform: translateY(0);
     padding: 10px 2px;
     font-size: 8px;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(-10px);
+  }
+
+  50% {
+    transform: translateY(10px);
   }
 }
