@@ -72,6 +72,16 @@ section.inset {
   align-items: center;
 }
 
+#text.slide {
+  transform: translateX(100%);
+  transition: transform 200ms;
+}
+
+#text {
+  transform: translateX(0);
+  transition: transform 200ms;
+}
+
 .introduction {
   height: 100%;
   width: 100%;
@@ -82,6 +92,7 @@ section.inset {
 }
 
 .introduction .title {
+  overflow: hidden;
   width: 75vw;
   display: flex;
   flex-direction: column;
@@ -97,10 +108,15 @@ section.inset {
 }
 
 .introduction .name {
-  text-align: center;
+  flex-grow: 0;
   font-size: 8vw;
   font-weight: bold;
   font-family: "Gilroy", var(--font-stack), sans-serif;
+}
+
+.introduction .links {
+  flex-grow: 0;
+  height: 40px;
 }
 
 .introduction .logo img {
