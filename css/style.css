@@ -182,7 +182,7 @@ section .float {
   height: 60%;
   width: auto;
   stroke: #fff;
-  transition: stroke 200ms;
+  transition: stroke 200ms, fill 200ms;
 }
 
 .introduction .link.active,
@@ -197,8 +197,9 @@ section .float {
 .introduction .link:hover > svg,
 .mobile-links .link:active > svg,
 .mobile-links .link:hover > svg {
+  fill: #1e1e1e;
   stroke: #1e1e1e;
-  transition: stroke 200ms;
+  transition: stroke 200ms, fill 200ms;
 }
 
 .introduction .name a:hover {
