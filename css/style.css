@@ -68,6 +68,7 @@ section.third {
 
 section.half {
   height: 50vh;
+  min-height: 500px;
 }
 
 section.rest {
@@ -228,6 +229,11 @@ section .float {
 
 .bio > h1 {
   margin: 0;
+}
+
+.bio > h1 > span {
+  background-color: #a4a4a4;
+  color: #1e1e1e;
 }
 
 u {
