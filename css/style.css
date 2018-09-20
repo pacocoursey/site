@@ -15,10 +15,6 @@
   display: none;
 }
 
-::-moz-scrollbars {
-  display: none;
-}
-
 ::selection {
   background-color: #fff;
   color: #1e1e1e;
@@ -28,6 +24,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 body {
