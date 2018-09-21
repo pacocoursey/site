@@ -15,8 +15,8 @@ const elements = {
   },
   email: {
     el: document.querySelector('#email'),
-    link: 'mailto:paco@paco.im',
-    string: 'paco@paco.im',
+    link: 'mailto:p@paco.im',
+    string: 'p@paco.im',
     active: false,
     blank: false,
     pre: '',
