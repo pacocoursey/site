@@ -59,6 +59,10 @@ section {
   background-color: #1e1e1e;
 }
 
+section.small {
+  min-height: 10vh;
+}
+
 section.third {
   min-height: 30vh;
 }
@@ -394,15 +398,19 @@ u:hover {
 }
 
 .viv {
-  background-image: linear-gradient(to bottom right, #b066fe, #63e2ff);
+  background-image: linear-gradient(to bottom right, #ced4da, #868e96);
 }
 
 .moon {
-  background-image: linear-gradient(to bottom right, #8e78ff, #fc7d7b);
+  background-image: linear-gradient(to bottom right, #ffd8a8, #ffa94d);
 }
 
 .flow {
   background-image: linear-gradient(to bottom right, #d4145a, #fbb03b);
+}
+
+.dusk {
+  background-image: linear-gradient(to bottom right, #1e1e1e, #3c3c3c);
 }
 
 .flow:hover,
