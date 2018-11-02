@@ -21,13 +21,6 @@ const elements = {
     blank: false,
     pre: '',
   },
-  spectrum: {
-    el: document.querySelector('#spectrum'),
-    link: 'https://spectrum.chat/users/paco',
-    string: 'paco',
-    active: false,
-    pre: '@',
-  },
 };
 
 const text = document.querySelector('#text');
@@ -93,8 +86,7 @@ Object.values(elements).forEach((obj) => {
 div.addEventListener('mouseleave', () => {
   if (!elements.github.active
       && !elements.twitter.active
-      && !elements.email.active
-      && !elements.spectrum.active) {
+      && !elements.email.active) {
     return;
   }
 
