@@ -24,7 +24,6 @@ html,
 body {
   padding: 0;
   margin: 0;
-  overflow-x: hidden;
 }
 
 body {
@@ -185,7 +184,7 @@ section .float {
 .mobile-links .link svg {
   height: 60%;
   width: auto;
-  stroke: #fff;
+  /* stroke: #fff; */
   transition: stroke 200ms, fill 200ms;
 }
 
@@ -420,6 +419,28 @@ u:hover {
 
 .f2prs {
   background-image: linear-gradient(to bottom right, #606c88, #3f4c6b);
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #fff;
+  }
+
+  section {
+    background-color: #fff;
+    color: #000;
+  }
+
+  .logo img {
+    filter: invert(90%);
+  }
+
+  .introduction .link,
+  .mobile-links .link {
+    border: 1px solid #000;
+    color: #000;
+  }
 }
 
 /* Large width */

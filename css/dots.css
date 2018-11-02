@@ -23,6 +23,21 @@
   height: 20%;
 }
 
+@media (prefers-color-scheme: light) {
+  .dot {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.2) 1px, #fff 1px);
+  }
+
+  .dot::after {
+    background-image:
+      linear-gradient(
+        to top,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0.1) 100%
+      );
+  }
+}
+
 /* .dot::before {
   content: '';
   background-image:
