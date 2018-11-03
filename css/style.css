@@ -199,7 +199,7 @@ section .float {
 
 .introduction .name {
   flex-grow: 0;
-  font-size: 7vw;
+  font-size: 6vw;
   font-weight: bold;
   font-family: var(--font-stack);
 }
@@ -298,14 +298,15 @@ section .float {
   font-weight: 400;
 }
 
-.bio u {
+.bio a {
   cursor: pointer;
   text-decoration: none;
   position: relative;
   font-weight: bold;
+  white-space: nowrap;
 }
 
-.bio u::after {
+.bio a::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -317,7 +318,7 @@ section .float {
   transition: height 200ms;
 }
 
-u:hover::after {
+.bio a:hover::after {
   height: 100%;
   transition: height 200ms;
 }
