@@ -72,6 +72,12 @@ a {
   color: inherit;
 }
 
+.dot {
+  background-size: var(--dot-size) var(--dot-size);
+  background-image: radial-gradient(var(--dot-color) 1px, var(--background) 1px);
+  background-position: center;
+}
+
 section.small {
   min-height: 10vh;
 }
@@ -289,6 +295,7 @@ u:hover::after {
 
 .projects {
   z-index: 2;
+  margin: 50px 0;
   width: 100%;
   height: 100%;
   display: flex;
