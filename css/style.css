@@ -61,6 +61,21 @@
   --dot-background-image: radial-gradient(var(--dot-color) 1px, var(--background) 1px);
 }
 
+.light {
+  /* Colors */
+  --background: #fff;
+  --foreground: #232323;
+
+  /* Dot Variables */
+  --dot-size: 50px;
+  --dot-color: rgba(35, 35, 35, 1);
+  --dot-transparent: rgba(255, 255, 255, 0.1);
+}
+
+.light .introduction .logo img {
+  filter: invert(90%);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -145,7 +160,7 @@ section > div {
 
 section .float {
   position: absolute;
-  bottom: 4rem;
+  bottom: 2rem;
   -webkit-animation: float 5s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
   animation: float 5s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
 }
@@ -212,6 +227,7 @@ section .float {
 .introduction .logo img {
   height: 12vw;
   max-height: 150px;
+  cursor: pointer;
 }
 
 .introduction .link,
