@@ -100,3 +100,20 @@ div.addEventListener('mouseleave', () => {
     text.classList.remove('slide');
   }, animation);
 });
+
+/* Theme toggle */
+
+if (localStorage.getItem('light')) {
+  document.body.classList.add('light');
+}
+
+const logo = document.querySelector('.logo img');
+logo.addEventListener('click', () => {
+  document.body.classList.toggle('light');
+  const isLight = document.body.classList.contains('light');
+  if (isLight) {
+    localStorage.setItem('light', 'true');
+  } else {
+    localStorage.removeItem('light');
+  }
+});
