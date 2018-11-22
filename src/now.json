@@ -1,4 +1,5 @@
 {
+  "version": 2,
   "alias": ["paco.im", "www.paco.im"],
   "type": "static"
 }

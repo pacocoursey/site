@@ -1,0 +1,19 @@
+{
+  "name": "paco.im",
+  "version": "0.0.1",
+  "scripts": {
+    "deploy": "gulp && cd build && now && now alias"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-uglify": "^3.0.1"
+  }
+}
