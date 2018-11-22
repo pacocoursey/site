@@ -2,6 +2,7 @@
   font-family: "Cereal";
   font-weight: 900;
   font-style: normal;
+  font-display: fallback;
   src: url('../font/cereal-black.ttf');
 }
 
@@ -9,6 +10,7 @@
   font-family: "Cereal";
   font-weight: 800;
   font-style: normal;
+  font-display: fallback;
   src: url('../font/cereal-extrabold.ttf');
 }
 
@@ -16,6 +18,7 @@
   font-family: "Cereal";
   font-weight: 700;
   font-style: normal;
+  font-display: fallback;
   src: url('../font/cereal-bold.ttf');
 }
 
@@ -23,6 +26,7 @@
   font-family: "Cereal";
   font-weight: 500;
   font-style: normal;
+  font-display: fallback;
   src: url('../font/cereal-medium.ttf');
 }
 
@@ -30,6 +34,7 @@
   font-family: "Cereal";
   font-weight: 400;
   font-style: normal;
+  font-display: fallback;
   src: url('../font/cereal-book.ttf');
 }
 
@@ -37,6 +42,7 @@
   font-family: "Cereal";
   font-weight: 300;
   font-style: normal;
+  font-display: fallback;
   src: url('../font/cereal-light.ttf');
 }
 

@@ -33,26 +33,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Stylesheets -->
+    <link rel="preload" href="./css/style.css" as="style">
     <link rel="stylesheet" href="./aos/aos.css">
-    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Fonts -->
+    <link rel="preload" href="./font/cereal-bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="./font/cereal-book.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="./font/cereal-medium.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="./font/cereal-light.ttf" as="font" type="font/ttf" crossorigin="anonymous">
   </head>
 
   <body class="dot">
 
     <div class="mobile-links center">
-      <a href="https://github.com/pacocoursey" target="_blank">
+      <a href="https://github.com/pacocoursey" target="_blank" rel="noopener noreferrer" aria-label="GitHub Link">
         <div class="link center">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
         </div>
       </a>
 
-      <a href="https://twitter.com/pacocoursey" target="_blank">
+      <a href="https://twitter.com/pacocoursey" target="_blank" rel="noopener noreferrer" aria-label="Twitter Link">
         <div class="link center">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
         </div>
       </a>
 
-      <a href="mailto:p@paco.im">
+      <a href="mailto:p@paco.im" aria-label="Email Link">
         <div class="link center">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline stroke="var(--foreground)" points="22,6 12,13 2,6"></polyline></svg>
         </div>
@@ -68,14 +74,14 @@
           <div class="name" id="text">Paco Coursey</div>
           <div class="links">
 
-            <a href="https://github.com/pacocoursey" target="_blank">
+            <a href="https://github.com/pacocoursey" target="_blank" rel="noopener noreferrer">
               <div class="link center" id="github">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
 
               </div>
             </a>
 
-            <a href="https://twitter.com/pacocoursey" target="_blank">
+            <a href="https://twitter.com/pacocoursey" target="_blank" rel="noopener noreferrer">
               <div class="link center" id="twitter">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
               </div>
@@ -99,16 +105,16 @@
     <section class="half inset center">
       <div class="bio" data-aos="fade-up">
         <h1 class="large-text">Hey, I&apos;m Paco.</h1>
-        <p>I am a Computer Science student at <a href="http://nmt.edu" target="_blank">New Mexico Tech.</a></p>
-        <p>I enjoy <a href="https://github.com/pacocoursey" target="_blank">building web projects</u></a> with JavaScript.</p>
-        <p>I am <a href="resume_public.pdf" target="_blank">looking for an internship.</a></p>
+        <p>I am a Computer Science student at <a href="http://nmt.edu" target="_blank" rel="noopener noreferrer">New Mexico Tech.</a></p>
+        <p>I enjoy <a href="https://github.com/pacocoursey" target="_blank" rel="noopener noreferrer">building web projects</u></a> with JavaScript.</p>
+        <p>I am <a href="resume_public.pdf" target="_blank" rel="noopener noreferrer">looking for an internship.</a></p>
       </div>
     </section>
 
     <section class="full inset center">
       <div class="projects">
         <div class="project-wrapper" data-aos="fade-up-right">
-          <a href="https://github.com/pacocoursey/opus" target="_blank">
+          <a href="https://github.com/pacocoursey/opus" target="_blank" rel="noopener noreferrer">
             <div class="project opus">
               <div class="title">
                 <div class="name">Opus</div>
@@ -129,7 +135,7 @@
         </div>
 
         <div class="project-wrapper" data-aos="fade-up-left">
-          <a href="https://github.com/pacocoursey/viv" target="_blank">
+          <a href="https://github.com/pacocoursey/viv" target="_blank" rel="noopener noreferrer">
             <div class="project viv">
               <div class="title">
                 <div class="name">Viv</div>
@@ -150,7 +156,7 @@
         </div>
 
         <div class="project-wrapper" data-aos="fade-up-right">
-          <a href="https://github.com/pacocoursey/dusk" target="_blank">
+          <a href="https://github.com/pacocoursey/dusk" target="_blank" rel="noopener noreferrer">
             <div class="project dusk">
               <div class="title">
                 <div class="name">Dusk</div>
@@ -171,7 +177,7 @@
         </div>
 
         <div class="project-wrapper" data-aos="fade-up-left">
-          <a href="https://github.com/pacocoursey/moon" target="_blank">
+          <a href="https://github.com/pacocoursey/moon" target="_blank" rel="noopener noreferrer">
             <div class="project moon">
               <div class="title">
                 <div class="name">Moon</div>
@@ -192,7 +198,7 @@
         </div>
 
         <div class="project-wrapper" data-aos="fade-up">
-          <a href="http://f2prs.com" target="_blank">
+          <a href="http://f2prs.com" target="_blank" rel="noopener noreferrer">
             <div class="project f2prs">
               <div class="title">
                 <div class="name">F2PRS</div>
@@ -220,6 +226,6 @@
     <script>
       AOS.init();
     </script>
-    <script type="text/javascript" src="./js/type.js"></script>
+    <script src="./js/type.js"></script>
   </body>
 </html>
